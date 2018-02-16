@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        android:title="@string/add_task"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/complete"
+        android:icon="@drawable/ic_action_comp"
+        android:orderInCategory="200"
+        android:title="@string/complete_task"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="200"
+        android:title="@string/help"
+        app:showAsAction="never" />
+
+</menu>
+<!--<menu>
+Defines a Menu, which is a container for menu items. A <menu> element must be the root node for the file and can hold one or more <item> and <group> elements.
+<item>
+Creates a MenuItem, which represents a single item in a menu. This element may contain a nested <menu> element in order to create a submenu.
+android:id
+A resource ID that's unique to the item, which allows the application to recognize the item when the user selects it.
+android:icon
+A reference to a drawable to use as the item's icon.
+android:title
+A reference to a string to use as the item's title.
+android:showAsAction
+Specifies when and how this item should appear as an action item in the app bar.-->
